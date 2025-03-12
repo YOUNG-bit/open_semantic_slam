@@ -39,21 +39,48 @@ pip install submodules/diff-gaussian-rasterization
 pip install submodules/simple-knn
 ```
 
-## Demo
-Download our pre-built Semantic 3D Gaussian scenes.
+## Scene Interaction Demo
+### 1. Download our pre-constructed Semantic 3D Gaussian scenes for the Replica dataset from the following link: [Driver](https://drive.google.com/drive/folders/1-bGoaZQRRKLHXFQGq3_6gu1KXhoePbQv?usp=drive_link) 
 
-comming soon!
+### 2. Scene Interaction
+```
+python ./final_vis.py --scene_npz [download_path]/room1.npz
+```
+Here, users can click on any object in the scene to interact with it and use our Gaussian Voting method for real-time semantic rendering. Note that we use the **pynput** library to capture mouse clicks, which retrieves the click position on **the entire screen**. To map this position to the display window, we subtract an offset `(x_off, y_off)`, representing the window’s top-left corner on the screen. All tests were conducted on an Ubuntu system with a 2K resolution.
 
-## Source Code
+### *Key Press Description*
 
-comming soon!
+- **T**: Toggle between color and label display modes.  
+- **J**: Toggle between showing all objects or a single object.  
+- **K**: Capture the current view.  
+- **A**: Translate the object along the x-axis by +0.01.  
+- **S**: Translate the object along the y-axis by +0.01.  
+- **D**: Translate the object along the z-axis by +0.01.  
+- **Z**: Translate the object along the x-axis by -0.01.  
+- **X**: Translate the object along the y-axis by -0.01.  
+- **C**: Translate the object along the z-axis by -0.01.  
+- **F**: Rotate the object around the x-axis by +1 degree.  
+- **G**: Rotate the object around the y-axis by +1 degree.  
+- **H**: Rotate the object around the z-axis by +1 degree.  
+- **V**: Rotate the object around the x-axis by -1 degree.  
+- **B**: Rotate the object around the y-axis by -1 degree.  
+- **N**: Rotate the object around the z-axis by -1 degree.  
+- **O**: Output the current camera view matrix.  
+- **M**: Switch to the next mapping camera view.  
+- **L**: Increase the scale of all Gaussians.  
+- **P**: Downsample Gaussians using a voxel grid.  
+
+
+## SLAM Source Code
+
+Coming soon!
 
 <!-- ## Note
 
 This repository contains the code used in the paper "OpenGS-SLAM: Open-Set Dense Semantic SLAM with 3D Gaussian Splatting for Object-Level Scene Understanding". The full code will be released upon acceptance of the paper. -->
 
 ## Acknowledgement
-We sincerely thank the developers and contributors of the many open-source projects that our code is built upon.
+We are expanding our conference paper with additional results and in-depth analysis for journal submission. The associated source code will be made publicly available upon acceptance to support reproducibility and further research.
 
 * [GS_ICP_SLAM](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM)
 * [SplaTAM](https://github.com/spla-tam/SplaTAM/tree/main)
@@ -69,7 +96,4 @@ If you find our paper and code useful, please cite us:
   journal={arXiv preprint arXiv:2503.01646},
   year={2025}
 }
-
-
-
 ```

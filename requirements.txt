@@ -1,0 +1,8 @@
+opencv-contrib-python
+open3d
+scipy
+tqdm
+torchmetrics
+plyfile
+rerun-sdk
+pynput==1.7.7
