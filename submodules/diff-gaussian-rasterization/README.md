@@ -1,5 +1,1 @@
-Ref: 3D Gaussian-splatting
-* add depth rendering and backward propagation for depth loss
-* need more examination, but still has nice quality
-* submodule of 
-https://github.com/Lab-of-AI-and-Robotics/RGBD_gaussian-splatting_SLAM
+Enhancements to 3D Gaussian Splatting: We have integrated additional functionalities, including depth rendering, semantic rendering, and backpropagation, into the 3D Gaussian Splatting framework. While further validation is required, the current implementation demonstrates promising quality and performance.
