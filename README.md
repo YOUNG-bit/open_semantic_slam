@@ -52,6 +52,12 @@ comming soon!
 
 This repository contains the code used in the paper "OpenGS-SLAM: Open-Set Dense Semantic SLAM with 3D Gaussian Splatting for Object-Level Scene Understanding". The full code will be released upon acceptance of the paper. -->
 
+## Acknowledgement
+We sincerely thank the developers and contributors of the many open-source projects that our code is built upon.
+
+* [GS_ICP_SLAM](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM)
+* [SplaTAM](https://github.com/spla-tam/SplaTAM/tree/main)
+
 ## Citation
 
 If you find our paper and code useful, please cite us:
@@ -63,5 +69,7 @@ If you find our paper and code useful, please cite us:
   journal={arXiv preprint arXiv:2503.01646},
   year={2025}
 }
+
+
 
 ```
